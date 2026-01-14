@@ -23,7 +23,7 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://ericshadrach.io"),
+  metadataBase: new URL("https://ericshadrach.com"),
   title: {
     default: "Eric Shadrach Miller | Architect of Agentic AI Systems",
     template: "%s | Eric Shadrach Miller",
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Eric Shadrach Miller | Architect of Agentic AI Systems",
     description: "Designing systems that teach us how to be human. From dissertation theory to enterprise reality.",
-    url: "https://ericshadrach.io",
+    url: "https://ericshadrach.com",
     siteName: "Eric Shadrach Miller",
     locale: "en_US",
     type: "website",

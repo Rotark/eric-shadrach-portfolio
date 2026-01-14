@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: "*",
       allow: "/",
     },
-    sitemap: "https://ericshadrach.io/sitemap.xml",
+    sitemap: "https://ericshadrach.com/sitemap.xml",
   };
 }

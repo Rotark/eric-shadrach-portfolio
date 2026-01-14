@@ -1,5 +1,6 @@
 import { GlassCard, SectionHeading, Button } from "@/components/ui";
 import { Metadata } from "next";
+import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "About | Eric Shadrach Miller",
@@ -79,17 +80,17 @@ export default function AboutPage() {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <div className="flex flex-col lg:flex-row items-center gap-12">
-              {/* Photo Placeholder */}
+              {/* Photo */}
               <div className="lg:w-1/3">
-                <div className="w-64 h-64 mx-auto rounded-2xl glass overflow-hidden flex items-center justify-center">
-                  <div className="text-center p-8">
-                    <div className="w-24 h-24 mx-auto mb-4 rounded-full bg-teal/10 flex items-center justify-center">
-                      <span className="text-4xl font-heading font-bold text-teal">ESM</span>
-                    </div>
-                    <p className="text-sm text-foreground-muted">
-                      Photo placeholder
-                    </p>
-                  </div>
+                <div className="w-64 h-80 mx-auto rounded-2xl glass overflow-hidden shadow-xl shadow-teal/10">
+                  <Image
+                    src="/images/headshot.jpg"
+                    alt="Eric Shadrach Miller"
+                    width={256}
+                    height={320}
+                    className="w-full h-full object-cover object-top"
+                    priority
+                  />
                 </div>
               </div>
 
