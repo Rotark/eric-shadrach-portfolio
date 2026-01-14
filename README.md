@@ -1,36 +1,87 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Eric Shadrach Miller Portfolio
 
-## Getting Started
+> "Designing systems that teach us how to be human."
 
-First, run the development server:
+A personal portfolio site showcasing the work of Eric Shadrach Miller — PhD researcher, AI systems architect, and the creator of Axon's Verbal Skills Training platform.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## 🌿 Solarpunk Lab Aesthetic
+
+This site features a "Solarpunk Lab" design aesthetic:
+- **Light, optimistic base** with clean whites and off-whites
+- **Glassmorphism UI** with frosted glass cards and subtle blur effects
+- **Deep Teal + Soft Gold** accent colors balancing tech and warmth
+- **Space Grotesk** headings for an engineered feel
+- **Inter** body text for clean readability
+
+## 🛠 Tech Stack
+
+- **Framework:** Next.js 14+ with App Router
+- **Language:** TypeScript
+- **Styling:** Tailwind CSS v4
+- **Animations:** Framer Motion
+- **Deployment:** Vercel
+
+## 📁 Project Structure
+
+```
+├── app/
+│   ├── layout.tsx          # Root layout with fonts, metadata
+│   ├── page.tsx            # Home page with Hero
+│   ├── axon/               # Axon VR case study
+│   ├── dissertation/       # PhD research
+│   ├── methodology/        # Humics & Speculative Design
+│   ├── lab/                # Personal projects
+│   └── about/              # Bio and contact
+├── components/
+│   ├── ui/                 # Reusable UI components
+│   ├── Navigation.tsx      # Floating glass navbar
+│   ├── Footer.tsx
+│   └── Hero.tsx
+├── lib/
+│   └── utils.ts            # Utility functions
+└── public/
+    └── images/
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🚀 Getting Started
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+# Install dependencies
+npm install
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+# Run development server
+npm run dev
 
-## Learn More
+# Build for production
+npm run build
 
-To learn more about Next.js, take a look at the following resources:
+# Start production server
+npm start
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🌐 Deployment
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+This site is configured for automatic deployment on Vercel:
 
-## Deploy on Vercel
+1. Push to GitHub
+2. Connect repository to Vercel
+3. Auto-deploys on every push to main
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 📝 Content Sections
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- **Home:** Hero section with narrative arc (Theory → Method → Practice)
+- **Axon VR:** Featured case study on AI-powered verbal skills training
+- **Dissertation:** PhD research on interactive storytelling and computational thinking
+- **Methodology:** Humics (physics of people) and Speculative Design frameworks
+- **Lab:** Personal projects and experiments
+- **About:** Bio, timeline, and contact information
+
+## 🔗 Links
+
+- **Live Site:** [ericshadrach.io](https://ericshadrach.io)
+- **Dissertation:** [UTD Repository](https://utd-ir.tdl.org/items/4b5acdb8-b118-47f0-b08f-f85e0155b825)
+- **Axon Blog:** [How Axon is Transforming Verbal Skills Training](https://www.axon.com/blog/how-axon-is-transforming-verbal-skills-training)
+
+---
+
+Built with ❤️ and Claude Code
