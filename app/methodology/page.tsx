@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 const humicsComponents = [
   {
     name: "Trust Dynamics",
-    description: "Modeling how trust builds and erodes through interaction patterns, response timing, and consistency.",
+    description: "How trust goes up and down based on what you say, when you say it, and whether you follow through.",
     icon: (
       <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
@@ -18,7 +18,7 @@ const humicsComponents = [
   },
   {
     name: "Emotional State",
-    description: "Tracking emotional progression through valence, arousal, and dominance dimensions over time.",
+    description: "The agent tracks how the person is feeling along valence, arousal, and dominance dimensions. And it changes over time.",
     icon: (
       <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
@@ -27,7 +27,7 @@ const humicsComponents = [
   },
   {
     name: "Hidden Facts",
-    description: "Internal agent knowledge that influences behavior but isn't directly observable by the user.",
+    description: "Things the agent knows but won't tell you. A backstory, a grudge, a secret. It shapes how they react.",
     icon: (
       <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -36,7 +36,7 @@ const humicsComponents = [
   },
   {
     name: "Rapport Metrics",
-    description: "Quantifying the quality of connection through mirroring, acknowledgment, and reciprocity.",
+    description: "Are you mirroring their language? Acknowledging what they said? The agent notices.",
     icon: (
       <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
@@ -49,22 +49,22 @@ const speculativeSteps = [
   {
     step: 1,
     title: "Envision the Future",
-    description: "Use science fiction scenarios to imagine systems 10-20 years ahead of current technology.",
+    description: "Write sci-fi scenarios about the system you want to build, set 10–20 years out.",
   },
   {
     step: 2,
     title: "Work Backwards",
-    description: "Identify the technical and social requirements needed to reach that envisioned future.",
+    description: "Figure out what tech and social infrastructure you'd need to get there.",
   },
   {
     step: 3,
     title: "Prototype the Gap",
-    description: "Build systems that bridge current capabilities with future possibilities.",
+    description: "Build the pieces you can build now, aimed at that future.",
   },
   {
     step: 4,
     title: "Iterate with Fiction",
-    description: "Use narrative scenarios to stress-test designs before implementation.",
+    description: "Run your design through narrative scenarios before you write any code.",
   },
 ];
 
@@ -72,17 +72,17 @@ const connections = [
   {
     from: "Microscope RPG",
     to: "World Generation",
-    description: "Fractal history-building techniques inform how AI agents construct coherent backstories.",
+    description: "The way Microscope builds fractal histories? That's how I think about giving agents coherent backstories.",
   },
   {
     from: "Tabletop Systems",
     to: "State Machines",
-    description: "RPG mechanics translate directly to agent behavior rules and goal prioritization.",
+    description: "Character stats, action economies, goal hierarchies. RPG design maps straight onto agent behavior.",
   },
   {
     from: "Science Fiction",
     to: "Design Futures",
-    description: "Speculative narratives become design documents for systems that don't yet exist.",
+    description: "I use sci-fi stories as functional design docs for systems that don't exist yet.",
   },
 ];
 
@@ -101,8 +101,8 @@ export default function MethodologyPage() {
               <span className="text-gradient-teal">Designing Humans</span>
             </h1>
             <p className="text-lg md:text-xl text-foreground-muted max-w-2xl mx-auto">
-              Two frameworks that drive my approach to Agentic AI: understanding people 
-              as systems, and designing futures through fiction.
+              Two ideas run through everything I do: treating people as systems you can model,
+              and using fiction to design things that don't exist yet.
             </p>
           </div>
         </div>
@@ -115,7 +115,7 @@ export default function MethodologyPage() {
             <SectionHeading
               label="Framework 1"
               title="Humics: The Physics of People"
-              subtitle="Just as a game engine needs physics for objects, it needs 'Humics' for people. My work focuses on quantifying the unquantifiable."
+              subtitle="Pascal Bornet came up with the idea. I was the catalyst and lead inventor who turned it into a working, patent-pending system: prototyping agents, running user tests, and pushing for the architecture that made it real."
             />
 
             <GlassCard className="mb-12">
@@ -123,16 +123,18 @@ export default function MethodologyPage() {
                 <div className="w-12 h-12 rounded-xl bg-gold/10 text-gold flex items-center justify-center flex-shrink-0">
                   <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M13 10V3L4 14h7v7l9-11h-7z" />
+
                   </svg>
                 </div>
                 <div>
                   <h3 className="text-xl font-heading font-semibold mb-2">The Core Idea</h3>
                   <p className="text-foreground-muted leading-relaxed">
-                    <strong className="text-foreground">Humics</strong> is my term for the systematic 
-                    modeling of human social dynamics in computational systems. Where physics engines 
-                    simulate gravity and collision, Humics engines simulate trust, rapport, and 
-                    emotional progression. This allows AI agents to behave in ways that feel 
-                    authentically human.
+                    <strong className="text-foreground">Humics</strong> is Pascal Bornet&apos;s
+                    concept for modeling how humans and AI work together. Most people leave it at the
+                    philosophy level, a management theory. I took it further: I designed the agent
+                    prototypes, ran the user testing, and pushed for the architecture that
+                    actually <strong className="text-foreground">measures</strong> trust, rapport,
+                    and emotional state in real-time VR interactions. I turned a philosophy into a product.
                   </p>
                 </div>
               </div>
@@ -171,14 +173,14 @@ export default function MethodologyPage() {
               </h3>
               <div className="bg-white/50 rounded-xl p-8 font-mono text-lg mb-6">
                 <span className="text-teal">AgentBehavior</span> = f(
-                <span className="text-gold">Trust</span>, 
-                <span className="text-gold">Emotion</span>, 
-                <span className="text-gold">HiddenFacts</span>, 
+                <span className="text-gold">Trust</span>,
+                <span className="text-gold">Emotion</span>,
+                <span className="text-gold">HiddenFacts</span>,
                 <span className="text-teal">UserInput</span>)
               </div>
               <p className="text-foreground-muted text-sm max-w-xl mx-auto">
-                Agent responses are not scripted — they emerge from the dynamic interaction 
-                of internal state variables and real-time user input.
+                Nothing is pre-written. The agent looks at trust, emotion, hidden knowledge, and what
+                you just said, then figures out what to do.
               </p>
             </GlassCard>
           </div>
@@ -192,7 +194,7 @@ export default function MethodologyPage() {
             <SectionHeading
               label="Framework 2"
               title="Speculative Design"
-              subtitle="Using science fiction methodologies not just to write stories, but to design systems that don't yet exist."
+              subtitle="I use science fiction not just to tell stories, but to design systems that don't exist yet."
             />
 
             <GlassCard className="mb-12">
@@ -205,11 +207,12 @@ export default function MethodologyPage() {
                 <div>
                   <h3 className="text-xl font-heading font-semibold mb-2">Design for the Decade</h3>
                   <p className="text-foreground-muted leading-relaxed">
-                    My dissertation argued that interactive storytelling games may span more than 
-                    a decade of player experience. Traditional design methods can&apos;t account for 
-                    this timescale. <strong className="text-foreground">Speculative Design</strong> uses 
-                    science fiction scenarios to prototype experiences that won&apos;t be technically 
-                    feasible for years — ensuring we&apos;re building toward the right future.
+                    My PhD pointed out that interactive storytelling games might span more than
+                    a decade of player experience. You can't design for that timescale with normal
+                    methods. <strong className="text-foreground">Speculative Design</strong> uses
+                    sci-fi scenarios to prototype experiences that won&apos;t be technically
+                    feasible for years, so you're building toward the right future, not just
+                    the nearest one.
                   </p>
                 </div>
               </div>
@@ -239,8 +242,8 @@ export default function MethodologyPage() {
         <div className="container mx-auto px-4">
           <SectionHeading
             label="Origins"
-            title="Where These Ideas Come From"
-            subtitle="The unexpected connections between tabletop RPGs, science fiction, and AI systems design."
+            title="Where This Comes From"
+            subtitle="Tabletop RPGs, science fiction, and AI systems design have more in common than you'd think."
             align="center"
           />
 
@@ -276,11 +279,12 @@ export default function MethodologyPage() {
                 <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
               </svg>
               <blockquote className="text-xl md:text-2xl font-heading font-medium text-foreground mb-6 italic">
-                &ldquo;Whether it&apos;s a Microscope history of a fictional world or a survival plan 
-                for uncertain futures, I treat every scenario as a simulation to be solved.&rdquo;
+                &ldquo;Whether it&apos;s building a Microscope history of a fictional world or
+                figuring out how an agent should react when trust drops below 40%?
+                It&apos;s all the same problem to me.&rdquo;
               </blockquote>
               <p className="text-foreground-muted">
-                — The unifying thread across all my work
+                The unifying thread across all my work
               </p>
             </GlassCard>
           </div>
@@ -292,17 +296,17 @@ export default function MethodologyPage() {
         <div className="container mx-auto px-4">
           <GlassCard className="max-w-3xl mx-auto text-center py-12">
             <h2 className="text-2xl md:text-3xl font-heading font-bold mb-4">
-              See These Methodologies in Action
+              See It In Action
             </h2>
             <p className="text-foreground-muted mb-8">
-              From academic theory to enterprise implementation.
+              These aren&apos;t just ideas. They&apos;re running in production at Axon.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button href="/axon" variant="primary" size="lg">
                 Axon Case Study
               </Button>
-              <Button href="/lab" variant="glass" size="lg">
-                Explore the Lab
+              <Button href="/about" variant="glass" size="lg">
+                About Me
               </Button>
             </div>
           </GlassCard>

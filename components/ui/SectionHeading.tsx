@@ -39,7 +39,10 @@ export function SectionHeading({
         {title}
       </h2>
       {subtitle && (
-        <p className="text-lg md:text-xl text-foreground-muted max-w-2xl">
+        <p className={cn(
+          "text-lg md:text-xl text-foreground-muted max-w-2xl",
+          align === "center" && "mx-auto"
+        )}>
           {subtitle}
         </p>
       )}

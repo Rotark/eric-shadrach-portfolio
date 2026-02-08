@@ -5,7 +5,7 @@ import Link from "next/link";
 const highlights = [
   {
     title: "Axon VR",
-    description: "AI-powered verbal de-escalation training for law enforcement. Pattern-based agents that think, not just chat.",
+    description: "AI-powered de-escalation training for law enforcement. Agents that adapt to what you say, not scripts that don't.",
     href: "/axon",
     icon: (
       <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -16,7 +16,7 @@ const highlights = [
   },
   {
     title: "PhD Research",
-    description: "\"Toward the Design of Interactive Storytelling Games That Teach Computational Thinking\" — UTD 2021",
+    description: "\"Toward the Design of Interactive Storytelling Games That Teach Computational Thinking\" (UTD 2021)",
     href: "/dissertation",
     icon: (
       <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -27,7 +27,7 @@ const highlights = [
   },
   {
     title: "Humics",
-    description: "The physics of people. Quantifying trust, rapport, and empathy for AI systems that understand humans.",
+    description: "Pascal Bornet's framework for human-AI synergy. I led the design work that turned it into a system that actually measures empathy, trust, and rapport.",
     href: "/methodology",
     icon: (
       <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -42,16 +42,16 @@ const narrative = {
   theory: {
     year: "2021",
     title: "The Theory",
-    description: "My dissertation argued that interactive storytelling must move from rigid sequential logic to neural networks to truly teach complex thinking.",
+    description: "My PhD argued that interactive storytelling had to move past decision trees. I called the shift to neural networks before it happened.",
   },
   method: {
     title: "The Method",
-    description: "Using \"Science Fiction Speculative Design\" to envision systems before the technology fully exists.",
+    description: "A design approach I picked up from science fiction. Imagine the system 10 years out, then work backwards.",
   },
   practice: {
     year: "2025",
     title: "The Practice",
-    description: "Executing that exact vision at Axon, building the pattern-based human simulators I wrote about.",
+    description: "What I pitched in the dissertation, I shipped at Axon. Same idea, real product.",
   },
 };
 
@@ -66,7 +66,7 @@ export default function Home() {
           <SectionHeading
             label="The Journey"
             title="From Speculation to Simulation"
-            subtitle="The story of predicting the shift from sequential logic to neural networks — then building the proof."
+            subtitle="I predicted the shift from sequential logic to neural networks in 2021. Then I helped build the proof."
             align="center"
           />
 
@@ -134,8 +134,9 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <SectionHeading
             label="Featured Work"
-            title="Building the Future of Human Learning"
-            subtitle="From academic research to enterprise AI systems that transform how people develop critical skills."
+            title="What I Work On"
+            subtitle="PhD research, enterprise AI, and a framework for making agents feel human."
+            align="center"
           />
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -145,9 +146,8 @@ export default function Home() {
                   className="h-full group cursor-pointer"
                   style={{ animationDelay: `${index * 100}ms` }}
                 >
-                  <div className={`w-14 h-14 rounded-xl mb-6 flex items-center justify-center ${
-                    item.accent === "teal" ? "bg-teal/10 text-teal" : "bg-gold/10 text-gold"
-                  } group-hover:scale-110 transition-transform`}>
+                  <div className={`w-14 h-14 rounded-xl mb-6 flex items-center justify-center ${item.accent === "teal" ? "bg-teal/10 text-teal" : "bg-gold/10 text-gold"
+                    } group-hover:scale-110 transition-transform`}>
                     {item.icon}
                   </div>
                   <h3 className="text-xl font-heading font-semibold mb-3 group-hover:text-teal transition-colors">
@@ -175,11 +175,11 @@ export default function Home() {
           <GlassCard className="max-w-3xl mx-auto text-center py-12">
             <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">
               Ready to Build Something{" "}
-              <span className="text-gradient-teal">Extraordinary</span>?
+              <span className="text-gradient-teal">Together</span>?
             </h2>
             <p className="text-foreground-muted mb-8 max-w-xl mx-auto">
-              Whether you&apos;re exploring AI-powered training systems or looking for a collaborator 
-              who bridges research and implementation, let&apos;s connect.
+              If you&apos;re working on AI training systems or need someone who can bridge
+              the gap between research papers and shipping code, I&apos;d like to hear from you.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button href="/about#contact" variant="primary" size="lg">

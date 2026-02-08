@@ -11,7 +11,6 @@ const navLinks = [
   { href: "/axon", label: "Axon VR" },
   { href: "/dissertation", label: "Research" },
   { href: "/methodology", label: "Methodology" },
-  { href: "/lab", label: "Lab" },
   { href: "/about", label: "About" },
 ];
 

@@ -10,7 +10,7 @@ const projects = [
   {
     title: "Life RPG System",
     status: "Active",
-    description: "A personal improvement system that applies the same agentic frameworks from my professional work to manage daily life. Teachable agents for ETF investing, health tracking, and skill development.",
+    description: "Applying agentic AI frameworks to personal productivity — the same pattern-based architecture I build professionally, scaled down to manage daily life. Teachable agents for investing, health, and skill development.",
     tags: ["Agentic AI", "Personal Systems", "Cursor"],
     highlights: [
       "ETF Coach agent for investment decisions",
@@ -26,7 +26,7 @@ const projects = [
   {
     title: "Unity Prototypes",
     status: "Learning",
-    description: "Bridging the gap between system design and implementation. Focused experiments in Unity to translate theoretical frameworks into playable experiences.",
+    description: "Hands-on prototyping in Unity to test interactive storytelling mechanics. Translating theoretical agent behavior frameworks into playable systems with real-time feedback.",
     tags: ["Unity", "Game Dev", "Prototyping"],
     highlights: [
       "Agent behavior visualization tools",
@@ -42,7 +42,7 @@ const projects = [
   {
     title: "Microscope Campaigns",
     status: "Ongoing",
-    description: "Collaborative world-building through the Microscope RPG system. These fractal histories inform how I think about narrative generation and emergent storytelling.",
+    description: "Using Ben Robbins' Microscope RPG to collaboratively build fractal histories. These sessions directly inform how I design narrative generation and emergent story structures in AI systems.",
     tags: ["Tabletop", "World-Building", "Narrative"],
     highlights: [
       "Fractal history generation",
@@ -60,22 +60,22 @@ const projects = [
 const experiments = [
   {
     name: "Dialogue State Machines",
-    description: "Exploring hybrid approaches to conversation flow",
+    description: "Hybrid state machine + LLM conversation flows",
     status: "Research",
   },
   {
     name: "Emotion Visualization",
-    description: "Real-time display of agent emotional states",
+    description: "Rendering agent internal states as live dashboards",
     status: "Prototype",
   },
   {
     name: "Trust Calibration",
-    description: "Fine-tuning trust dynamics for realism",
+    description: "Tuning trust decay/growth curves for realism",
     status: "Testing",
   },
   {
     name: "Narrative Branching",
-    description: "Procedural story generation experiments",
+    description: "LLM-driven procedural story arc generation",
     status: "Concept",
   },
 ];
@@ -103,7 +103,7 @@ export default function LabPage() {
               The <span className="text-gradient-teal">Laboratory</span>
             </h1>
             <p className="text-lg md:text-xl text-foreground-muted max-w-2xl mx-auto">
-              Where theory meets practice. Personal experiments in Agentic AI, 
+              Where theory meets practice. Personal experiments in Agentic AI,
               game design, and computational thinking.
             </p>
           </div>
@@ -133,13 +133,12 @@ export default function LabPage() {
                         <h3 className="text-xl font-heading font-semibold group-hover:text-teal transition-colors">
                           {project.title}
                         </h3>
-                        <span className={`px-2 py-0.5 text-xs font-medium rounded-full ${
-                          project.status === "Active" 
-                            ? "bg-green-100 text-green-700" 
+                        <span className={`px-2 py-0.5 text-xs font-medium rounded-full ${project.status === "Active"
+                            ? "bg-green-100 text-green-700"
                             : project.status === "Learning"
-                            ? "bg-blue-100 text-blue-700"
-                            : "bg-gold/10 text-gold"
-                        }`}>
+                              ? "bg-blue-100 text-blue-700"
+                              : "bg-gold/10 text-gold"
+                          }`}>
                           {project.status}
                         </span>
                       </div>
@@ -202,15 +201,14 @@ export default function LabPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-4xl mx-auto">
             {experiments.map((experiment) => (
               <GlassCard key={experiment.name} variant="subtle" className="text-center">
-                <span className={`inline-block px-2 py-0.5 text-xs font-medium rounded-full mb-3 ${
-                  experiment.status === "Research" 
+                <span className={`inline-block px-2 py-0.5 text-xs font-medium rounded-full mb-3 ${experiment.status === "Research"
                     ? "bg-purple-100 text-purple-700"
                     : experiment.status === "Prototype"
-                    ? "bg-teal/10 text-teal"
-                    : experiment.status === "Testing"
-                    ? "bg-green-100 text-green-700"
-                    : "bg-gray-100 text-gray-700"
-                }`}>
+                      ? "bg-teal/10 text-teal"
+                      : experiment.status === "Testing"
+                        ? "bg-green-100 text-green-700"
+                        : "bg-gray-100 text-gray-700"
+                  }`}>
                   {experiment.status}
                 </span>
                 <h4 className="font-heading font-semibold mb-1">
@@ -262,9 +260,9 @@ export default function LabPage() {
                 The Lab Philosophy
               </h3>
               <p className="text-foreground-muted leading-relaxed mb-6">
-                I use the same agentic frameworks to manage my own life that I build for 
-                enterprise clients. The &ldquo;Life RPG&rdquo; isn&apos;t just a side project — 
-                it&apos;s proof that these systems work at every scale, from personal 
+                I use the same agentic frameworks to manage my own life that I build for
+                enterprise clients. The &ldquo;Life RPG&rdquo; isn&apos;t just a side project —
+                it&apos;s proof that these systems work at every scale, from personal
                 productivity to law enforcement training.
               </p>
               <p className="text-sm text-teal font-medium italic">

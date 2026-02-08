@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 const keyInsights = [
   {
     title: "Pattern-Based Over Sequential",
-    description: "Neural networks enable 'pattern-based' architectures that can handle the complexity of human interaction, unlike fragile decision trees.",
+    description: "Decision trees break when conversations get complex. Neural networks don't. That was the core argument.",
     icon: (
       <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z" />
@@ -18,7 +18,7 @@ const keyInsights = [
   },
   {
     title: "Speculative Design Methodology",
-    description: "Using science fiction as a design tool to envision and prototype systems before the technology fully exists.",
+    description: "Write sci-fi about the system you want to build. It sounds weird, but it works. You catch design problems years before they matter.",
     icon: (
       <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
@@ -27,7 +27,7 @@ const keyInsights = [
   },
   {
     title: "Computational Thinking Through Play",
-    description: "Interactive storytelling games can teach computational thinking by forcing players to model the internal state of AI agents.",
+    description: "When you play against an AI with hidden internal states, you're doing computational thinking without realizing it.",
     icon: (
       <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" />
@@ -37,7 +37,7 @@ const keyInsights = [
   },
   {
     title: "Long-Term Player Identity",
-    description: "These games may span decades and significantly influence player identity formation, requiring careful ethical design.",
+    description: "A game that might last a decade? That changes how you design it. And it raises real ethical questions about identity.",
     icon: (
       <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -50,32 +50,32 @@ const chapters = [
   {
     number: 1,
     title: "Literature Survey",
-    description: "Interactive storytelling, game studies, play studies, computational thinking, and science fiction criticism.",
+    description: "What's already been written about interactive storytelling, play, computational thinking, and sci-fi.",
   },
   {
     number: 2,
     title: "Operational Definition",
-    description: "Defining interactive storytelling games and arguing that these experiences are indeed games.",
+    description: "Making the case that interactive storytelling experiences are games. This matters more than you'd think.",
   },
   {
     number: 3,
     title: "Teaching Computational Thinking",
-    description: "How emerging interactive storytelling games are uniquely positioned to teach computational thinking.",
+    description: "Why these games are uniquely good at teaching computational thinking, and how.",
   },
   {
     number: 4,
     title: "Core Features & Affordances",
-    description: "Exploring the features of interactive storytelling games that enable teaching computational thinking.",
+    description: "What specific design features make interactive storytelling games work as teaching tools.",
   },
   {
     number: 5,
     title: "Sequential vs Pattern-Based",
-    description: "Analyzing examples and testing sequential logic vs neural network architectures.",
+    description: "The big comparison: branching decision trees vs. neural network architectures. Spoiler: the trees lose.",
   },
   {
     number: 6,
     title: "Science Fiction Methodologies",
-    description: "Making the case for formally including science fiction in game design research.",
+    description: "Why sci-fi deserves a seat at the game design research table. I make the formal case.",
   },
 ];
 
@@ -138,20 +138,20 @@ export default function DissertationPage() {
             />
             <GlassCard className="text-center">
               <p className="text-foreground-muted leading-relaxed mb-6">
-                Interactive storytelling games are an emerging genre that requires greater research, 
-                especially when they are made to teach subjects like computational thinking. The most 
-                promising avenue for development using neural networks will require an understanding 
+                Interactive storytelling games are an emerging genre that requires greater research,
+                especially when they are made to teach subjects like computational thinking. The most
+                promising avenue for development using neural networks will require an understanding
                 of designing procedures at a level that few writers or game designers could train for.
               </p>
               <p className="text-foreground-muted leading-relaxed mb-6">
-                The most likely software architecture for new interactive storytelling games are 
-                <span className="text-teal font-medium"> neural networks</span> and these are not 
-                explainable in the same manner that traditional sequential logic-based programs. 
-                This leads to challenges in design for educational games and makes informal learning 
+                The most likely software architecture for new interactive storytelling games are
+                <span className="text-teal font-medium"> neural networks</span> and these are not
+                explainable in the same manner that traditional sequential logic-based programs.
+                This leads to challenges in design for educational games and makes informal learning
                 the first likely area for creating them.
               </p>
               <p className="text-foreground leading-relaxed font-medium">
-                This dissertation proposes that to deal with these challenges, game design research 
+                This dissertation proposes that to deal with these challenges, game design research
                 needs to incorporate new methodologies that utilize{" "}
                 <span className="text-gold">science fiction for speculative design</span>.
               </p>
@@ -165,8 +165,8 @@ export default function DissertationPage() {
         <div className="container mx-auto px-4">
           <SectionHeading
             label="Key Insights"
-            title="What the Research Revealed"
-            subtitle="Core findings that predicted the AI revolution in interactive storytelling."
+            title="What I Found"
+            subtitle="Four ideas that came out of the research. One of them turned into my actual job."
           />
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -193,7 +193,7 @@ export default function DissertationPage() {
           <SectionHeading
             label="Structure"
             title="Chapter Overview"
-            subtitle="A journey from literature review to speculative design methodology."
+            subtitle="Six chapters, from lit review to the speculative design argument."
             align="center"
           />
 
@@ -257,9 +257,9 @@ export default function DissertationPage() {
               The Dissertation Predicted Axon
             </h2>
             <p className="text-foreground-muted mb-8 max-w-xl mx-auto">
-              In 2021, I argued that neural networks would revolutionize interactive storytelling. 
-              By 2025, I was building exactly that at Axon — pattern-based human simulators for 
-              law enforcement training.
+              In 2021, I wrote that neural networks would change interactive storytelling.
+              By 2022, I was at Axon building exactly that: pattern-based agents for
+              law enforcement de-escalation training.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button href="/axon" variant="primary" size="lg">
@@ -284,8 +284,8 @@ export default function DissertationPage() {
             />
             <GlassCard className="font-mono text-sm text-foreground-muted">
               <p className="mb-4">
-                Miller, Eric Shadrach. (2021). <em>Toward the Design of Interactive Storytelling 
-                Games That Teach Computational Thinking</em> [Doctoral dissertation, University 
+                Miller, Eric Shadrach. (2021). <em>Toward the Design of Interactive Storytelling
+                  Games That Teach Computational Thinking</em> [Doctoral dissertation, University
                 of Texas at Dallas]. UTD Electronic Theses and Dissertations.
               </p>
               <p className="text-teal break-all">

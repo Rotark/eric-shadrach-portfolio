@@ -9,7 +9,7 @@ export function Hero() {
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-hero">
       {/* Background Pattern */}
       <div className="absolute inset-0 bg-grid-pattern opacity-50" />
-      
+
       {/* Floating Orbs */}
       <motion.div
         className="absolute top-20 left-10 w-72 h-72 bg-teal/10 rounded-full blur-3xl"
@@ -45,7 +45,7 @@ export function Hero() {
             transition={{ duration: 0.5 }}
           >
             <span className="inline-block px-4 py-2 mb-6 text-sm font-medium text-teal bg-teal/10 rounded-full font-heading">
-              Scholar-Practitioner • AI Systems Architect
+              Scholar-Practitioner • AI Systems Designer
             </span>
           </motion.div>
 
@@ -56,8 +56,8 @@ export function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.1 }}
           >
-            I Architect{" "}
-            <span className="text-gradient-teal">Interactive Minds</span>
+            I Design{" "}
+            <span className="text-gradient-teal">AI That Thinks</span>
           </motion.h1>
 
           {/* Subheadline */}
@@ -67,10 +67,11 @@ export function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
           >
-            Bridging Dissertation Theory and Enterprise Reality. 
-            Transforming how humans learn through{" "}
-            <span className="text-teal font-medium">Agentic AI</span> and{" "}
-            <span className="text-gold font-medium">Computational Narrative</span>.
+            I wrote a PhD about why interactive storytelling needed neural networks.{" "}
+            Then I became the catalyst and lead inventor of a{" "}
+            <span className="text-gold font-medium">patent-pending</span> agentic system at Axon:{" "}
+            <span className="text-teal font-medium">pattern-based agents</span> for{" "}
+            <span className="text-gold font-medium">VR de-escalation training</span>.
           </motion.p>
 
           {/* CTA Buttons */}
@@ -90,7 +91,7 @@ export function Hero() {
                 </svg>
               }
             >
-              See the Proof
+              See My Work
             </Button>
             <Button
               href="/dissertation"
@@ -108,7 +109,7 @@ export function Hero() {
             animate={{ opacity: 1 }}
             transition={{ duration: 0.5, delay: 0.5 }}
           >
-            &ldquo;Designing systems that teach us how to be human.&rdquo;
+            &ldquo;I took a philosophy about human-AI synergy and turned it into a product.&rdquo;
           </motion.p>
         </div>
 
